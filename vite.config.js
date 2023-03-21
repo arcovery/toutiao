@@ -69,13 +69,7 @@ export default ({ mode }) => {
       // 允许跨域
       cors: true,
       // 自定义代理规则
-      proxy: {
-        '/api': {
-          target: 'http://geek.itheima.net/',
-          changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api/, ''),
-        },
-      },
+      proxy: {},
     },
     build: {
       // 设置最终构建的浏览器兼容目标
