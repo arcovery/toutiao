@@ -4,3 +4,13 @@
   status = 200
   force = true
   headers = {X-From = "Netlify"}
+[[redirects]]
+  from = "https://*"
+  to = "http://:splat"
+  status = 301
+  force = true
+  [[redirects]]
+  from = "wss://*"
+  to = "ws://:splat"
+  status = 301
+  force = true
