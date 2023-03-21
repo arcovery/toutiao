@@ -5,8 +5,8 @@
   force = true
   headers = {X-From = "Netlify"}
 [[redirects]]
-  from = "/ws/*"
-  to = "ws://geek.itheima.net/:splat"
-  status = 301
+  from = "/socket.io/*"
+  to = "ws://geek.itheima.net/socket.io/:splat"
+  status = 200
   force = true
 
