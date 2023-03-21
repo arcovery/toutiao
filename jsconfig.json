@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "lib": ["ES6", "DOM", "ES2015.Core"],
+    "jsx": "preserve",
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "types": ["vite/client"], // 👈 add this
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "vueCompilerOptions": {
+    "target": 2.7
+  },
+
+  "exclude": ["node_modules"],
+  "include": ["src/**/*"]
+}
