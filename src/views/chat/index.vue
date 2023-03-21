@@ -65,7 +65,7 @@ export default {
     if (!this.$store.state.users.userProfile.photo) {
       this.$store.dispatch('users/getProfile')
     }
-    socket = io('http://geek.itheima.net', {
+    socket = io('/ws', {
       query: {
         token: this.$store.state.users.token.token,
       },

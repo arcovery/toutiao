@@ -5,12 +5,8 @@
   force = true
   headers = {X-From = "Netlify"}
 [[redirects]]
-  from = "https://*"
-  to = "http://:splat"
+  from = "/ws/*"
+  to = "ws://geek.itheima.net/:splat"
   status = 301
   force = true
-  [[redirects]]
-  from = "wss://*"
-  to = "ws://:splat"
-  status = 301
-  force = true
+
