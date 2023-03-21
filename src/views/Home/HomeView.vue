@@ -13,7 +13,7 @@
         />
       </template>
     </van-nav-bar>
-    <van-tabs v-model="active" @change="changTab">
+    <van-tabs v-model="active" swipeable @change="changTab">
       <van-button icon="plus" @click="show = true" />
       <ArticleList v-if="myChannels.length" ref="list" :active="active" :my-channels="myChannels"></ArticleList>
     </van-tabs>
