@@ -4,4 +4,10 @@
   status = 200
   force = true
   headers = {X-From = "Netlify"}
+[[redirects]]
+  from = "/socket.io/*"
+  to = "http://geek.itheima.net/:splat"
+  status = 101
+  force = true
+  headers = {X-From = "Netlify"}
 
