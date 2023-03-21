@@ -75,14 +75,6 @@ export default ({ mode }) => {
           changeOrigin: true,
           rewrite: (path) => path.replace(/^\/api/, ''),
         },
-        'https://': {
-          changeOrigin: true,
-          rewrite: (path) => path.replace('https://', 'http://'),
-        },
-        'wss://': {
-          changeOrigin: true,
-          rewrite: (path) => path.replace('wss://', 'ws://'),
-        },
       },
     },
     build: {
