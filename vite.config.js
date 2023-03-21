@@ -76,12 +76,12 @@ export default ({ mode }) => {
           rewrite: (path) => path.replace(/^\/api/, ''),
         },
         'https://': {
-          target: 'http://',
           changeOrigin: true,
+          rewrite: (path) => path.replace('https://', 'http://'),
         },
         'wss://': {
-          target: 'ws://',
           changeOrigin: true,
+          rewrite: (path) => path.replace('wss://', 'ws://'),
         },
       },
     },
